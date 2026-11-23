@@ -1,0 +1,56 @@
+{
+    "name": "phpmath/statistics",
+    "type": "library",
+    "description": "A PHP library for immutable descriptive statistics on float data.",
+    "keywords": [
+        "phpmath",
+        "statistics",
+        "math",
+        "php8"
+    ],
+    "homepage": "https://github.com/phpmath/statistics",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Walter Tamboer",
+            "homepage": "https://waltertamboer.nl",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.4"
+    },
+    "require-dev": {
+        "phpmath/coding-standard": "^2.0",
+        "phpstan/phpstan": "^2.3",
+        "phpunit/phpunit": "^13.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "PHPMath\\Statistics\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PHPMath\\Statistics\\Tests\\": "tests/unit"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test-coverage": [
+            "@putenv XDEBUG_MODE=coverage",
+            "phpunit --coverage-html build/phpunit-coverage/"
+        ],
+        "check-style": "vendor/bin/phpcs",
+        "fix-style": "vendor/bin/phpcbf",
+        "analyse": "vendor/bin/phpstan analyse --memory-limit=1G"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "process-timeout": 5000,
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
