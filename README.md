@@ -9,7 +9,7 @@ A PHP library for immutable descriptive statistics on float data.
 
 ## Documentation
 
-The full documentation is at https://phpmath.github.io/statistics/. Every release is described on the [releases page](https://github.com/phpmath/statistics/releases).
+The full documentation is at https://phpmath.github.io/statistics/. Every change is listed in the [changelog](CHANGELOG.md) and every release on the [releases page](https://github.com/phpmath/statistics/releases).
 
 ## Install
 
